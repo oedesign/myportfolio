@@ -11,10 +11,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    overflow-x: hidden;
-}
-
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -23,12 +19,11 @@ body{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
     background: rgb(13, 202, 202);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(13, 202, 202);
 }
 
 /* all similar content styling codes */
@@ -76,7 +71,6 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    /* color: crimson; */
     color: rgb(13, 202, 202);
     padding: 0 5px;
     background: #fff;
@@ -94,8 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    /* background: crimson; */
-    background:  rgb(13, 202, 202);
+    background: rgb(13, 202, 202);
 }
 .navbar .max-width{
     display: flex;
@@ -108,9 +101,8 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    /* color: crimson; */
+    color: rgb(13, 202, 202);
     transition: all 0.3s ease;
-    color: rgb(13, 202, 202);   /* make changes */
 }
 .navbar.sticky .logo a span{
     color: #fff;
@@ -141,27 +133,11 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
-
-#btn{
-    border: 1px solid rgb(13, 202, 202); 
-    padding: 15px 30px 15px 30px; 
-    background: rgb(13, 202, 202); 
-    border-radius: 5px; 
-    border: 2px solid #fff;
-}
-
-#btn:hover{
-   background: white;
-   color: rgb(13, 202, 202);
-   border: 2px solid rgb(13, 202, 202);
-}
-
 .scroll-up-btn{
     position: fixed;
     height: 45px;
     width: 42px;
-    /* background: crimson; */
-    background:  rgb(13, 202, 202);
+    background: rgb(13, 202, 202);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -189,8 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/cover_moved.png") no-repeat center;
-    /* background: url("images/oebanner.jpg") no-repeat center; */
+    background: url("images/oedesignbanner.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -218,31 +193,29 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    /* color: crimson; */
+    color: rgb(13, 202, 202);
     font-weight: 500;
-    color: rgb(13, 202, 202); /* make changes */
 }
 .home .home-content a{
     display: inline-block;
     background: rgb(13, 202, 202);
-    color: white;
+    color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(13, 202, 202);
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color:rgb(13, 202, 202);
+    color: rgb(13, 202, 202);
     background: none;
-    border: 2px solid;
 }
 
 /* about section styling */
 .about .title::after{
-    content: "who I am";
+    content: "what I do";
 }
 .about .about-content .left{
     width: 45%;
@@ -262,43 +235,39 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    /* color: crimson; */
-    color:  rgb(13, 202, 202);
+    color: rgb(13, 202, 202);
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    /* background: crimson; */
-    background:  rgb(13, 202, 202);
+    background: rgb(13, 202, 202);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    /* border: 2px solid crimson; */
-    border: 2px solid  rgb(13, 202, 202);
+    border: 2px solid rgb(13, 202, 202);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    /* color: crimson; */
     color: rgb(13, 202, 202);
     background: none;
 }
 
 /* services section styling */
-.services, .contact{
+.services, .teams{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.contact .title::before{
-    background: white;
+.teams .title::before{
+    background: #fff;  
 }
 .services .title::after,
-.contact .title::after{
+.teams .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -312,7 +281,6 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    /* background: crimson; */
     background: rgb(13, 202, 202);
 }
 .services .serv-content .card .box{
@@ -323,7 +291,6 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    /* color: crimson; */
     color: rgb(13, 202, 202);
     transition: color 0.3s ease;
 }
@@ -354,7 +321,6 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    /* background: crimson; */
     background: rgb(13, 202, 202);
     color: #fff;
     font-size: 18px;
@@ -362,12 +328,10 @@ section .title::after{
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    /* border: 2px solid crimson; */
-    border: 2px solid  rgb(13, 202, 202);
+    border: 2px solid rgb(13, 202, 202);
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    /* color: crimson; */
     color: rgb(13, 202, 202);
     background: none;
 }
@@ -376,7 +340,7 @@ section .title::after{
 }
 .skills .skills-content .right .info{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
@@ -396,22 +360,19 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    /* background: crimson; */
     background: rgb(13, 202, 202);
 }
+
 .skills-content .right .html::before{
-    width: 90%;
+    width: 99%;
 }
 .skills-content .right .css::before{
-    width: 80%;
+    width: 90%;
 }
 .skills-content .right .js::before{
-    width: 70%;
+    width: 80%;
 }
 .skills-content .right .php::before{
-    width: 70%;
-}
-.skills-content .right .python::before{
     width: 50%;
 }
 .skills-content .right .mysql::before{
@@ -419,10 +380,26 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
+.projects .title::after{
+    content: "Fearured Projects";
 }
-.teams .carousel .card{
+/* Changed all team-related selectors to project-related selectors */
+.projects {
+    color: #fff;
+    background: #111;
+}
+
+.projects .title::before {
+    background: #fff;
+}
+
+.projects .title::after {
+    background: #111;
+    content: "previous work"; /* Updated section subtitle */
+}
+
+/* Project card styling */
+.projects .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -430,61 +407,155 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
-    /* background: crimson; */
-    background: rgb(13, 202, 202);
+
+.projects .carousel .card:hover {
+    background: rgb(13, 202, 202); /* Updated hover color */
 }
-.teams .carousel .card .box{
+
+.projects .carousel .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+
+.projects .carousel .card:hover .box {
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
+
+.projects .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    /* border: 5px solid crimson; */
-    border: 5px solid rgb(13, 202, 202);
+    border: 5px solid rgb(13, 202, 202); /* Updated accent color */
     transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    /* border: 2px solid crimson!important; */
-    border: 2px solid rgb(13, 202, 202)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    /* background: crimson!important; */
-    background: rgb(13, 202, 202)!important;
 }
 
+.projects .carousel .card:hover img {
+    border-color: #fff;
+}
+
+/* Project-specific additions */
+.project-card .tech-stack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.project-card .tech-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.project-card .project-links {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-links {
+    opacity: 1;
+}
+
+.project-card .link-button {
+    color: #fff;
+    background: rgba(13, 202, 202, 0.8);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.project-card .link-button:hover {
+    background: rgb(13, 202, 202);
+    transform: translateY(-3px);
+}
+
+.project-media {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.project-media img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-media img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 0 15px;
+}
+
+.project-category {
+    color: rgb(13, 202, 202);
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.social-icons, i{
+    padding: 5px;
+    font-size: larger;
+}
+
+.listen{
+    text-align: center;
+    position: relative;
+    top: 35px;
+    padding: 10px 20px;
+    background-color: rgb(13, 202, 202);
+    font-size: 1.15em;
+    color: white;
+    border: 2px solid rgb(13, 202, 202);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.listen:hover{
+    background-color: transparent;
+    color: rgb(13, 202, 202);
+}
+
+.c-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects .carousel .card {
+        padding: 20px;
+    }
+    
+    .project-card .tech-tag {
+        font-size: 0.8em;
+    }
+    
+    .project-card .project-links {
+        opacity: 1; /* Always show on mobile */
+        top: 10px;
+        right: 10px;
+    }
+}
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -513,14 +584,13 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    /* color: crimson; */
     color: rgb(13, 202, 202);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #fff;
+    color: #333;
 }
 .contact .right form .fields{
     display: flex;
@@ -575,12 +645,9 @@ section .title::after{
   flex-wrap: nowrap;
   background: rgb(13, 202, 202);
   border: 2px solid rgb(13, 202, 202);
-  /* background: crimson;
-  border: 2px solid crimson; */
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  /* color: crimson; */
   color: rgb(13, 202, 202);
   background: none;
 }
@@ -592,7 +659,6 @@ footer{
     text-align: center;
 }
 footer span a{
-    /* color: crimson; */
     color: rgb(13, 202, 202);
     text-decoration: none;
 }
@@ -600,10 +666,25 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-.social-icons, i{
-    padding: 5px;
-    font-size: larger;
+/* responsive media query start */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects .carousel .card {
+        padding: 20px;
+    }
+    
+    .project-card .tech-tag {
+        font-size: 0.8em;
+    }
+    
+    .project-card .project-links {
+        opacity: 1; /* Always show on mobile */
+        top: 10px;
+        right: 10px;
+    }
 }
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
