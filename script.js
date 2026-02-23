@@ -49,11 +49,13 @@ $(document).ready(function(){
     });
 
     // owl carousel script
-    $('.carousel').owlCarousel({
+    const $projectsCarousel = $('.carousel');
+
+    $projectsCarousel.owlCarousel({
         margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 2000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0:{
@@ -69,5 +71,14 @@ $(document).ready(function(){
                 nav: false
             }
         }
+    });
+
+    // Manual nav arrows
+    $('.projects-nav.prev').on('click', function () {
+        $projectsCarousel.trigger('prev.owl.carousel');
+    });
+
+    $('.projects-nav.next').on('click', function () {
+        $projectsCarousel.trigger('next.owl.carousel');
     });
 });
